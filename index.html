@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ro'yxatdan O'tish</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/originals/90/ae/e1/90aee1175b6035f061911a1165c73734.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .registration-form {
+            background: rgba(93, 55, 107, 0.8); /* Darker background to match image tones */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+        .registration-form h2 {
+            margin-bottom: 20px;
+            color: #f3f3f3; /* Lighter text for better contrast */
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #f3f3f3;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <h2>Ro'yxatdan O'tish</h2>
+        <form action="/register" method="POST">
+            <div class="form-group">
+                <label for="name">Ism:</label>
+                <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Emailingizni kiriting" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Parol:</label>
+                <input type="password" id="password" name="password" placeholder="Parolingizni kiriting" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Ro'yxatdan O'tish</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>‍
